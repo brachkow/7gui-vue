@@ -1,11 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
+import Counter from '@components/pages/Counter/Counter.vue';
+
 Vue.use(VueRouter);
 
-import Home from '@components/pages/Home/Home.vue';
-
-const routes = [{ path: '/', component: Home }];
+const routes = [
+  { path: '/counter', component: Counter },
+];
 
 const router = new VueRouter({
   routes,
