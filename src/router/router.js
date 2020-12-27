@@ -8,9 +8,9 @@ import Booker from '@components/pages/Booker/Booker.vue';
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/counter', component: Counter },
-  { path: '/converter', component: Converter },
-  { path: '/booker', component: Booker },
+  { name: 'Counter', path: '/counter', component: Counter },
+  { name: 'Converter', path: '/converter', component: Converter },
+  { name: 'Booker', path: '/booker', component: Booker },
 ];
 
 const router = new VueRouter({
