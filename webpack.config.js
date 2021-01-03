@@ -9,6 +9,7 @@ const config = (mode) => {
   if (mode === undefined) {
     mode = 'development';
   }
+  process.env.NODE_ENV = mode;
   return {
     mode,
     entry: ['./src/entry.js'],
