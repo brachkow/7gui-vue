@@ -59,11 +59,12 @@
 </template>
 
 <script>
+  const generateId = () => (Math.random() * 100000).toFixed(0);
   class Item {
     constructor(name, surname) {
       this.name = name;
       this.surname = surname;
-      this.id = (Math.random() * 100000).toFixed(0);
+      this.id = generateId();
     }
   }
   export default {
@@ -73,17 +74,12 @@
           {
             name: 'Will',
             surname: 'Smith',
-            id: (Math.random() * 100000).toFixed(0),
+            id: generateId(),
           },
           {
             name: 'Ivan',
             surname: 'Ivanov',
-            id: (Math.random() * 100000).toFixed(0),
-          },
-          {
-            name: 'Yung',
-            surname: 'Thug',
-            id: (Math.random() * 100000).toFixed(0),
+            id: generateId(),
           },
         ],
         filteredData: [],
